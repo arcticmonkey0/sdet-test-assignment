@@ -7,7 +7,7 @@ So that I can fetch the ones I'm interested in by some criteria
 Background:
 	Given I login as User
 
-Scenario: List of saloon cars
+Scenario: Fetch list of saloon cars
 	When I get a list of cars by Saloon type
 	Then I verify the received cars list is the same as following
 		| Make     | Model | Year | Type   | Price | ZeroToSixty |
@@ -15,20 +15,20 @@ Scenario: List of saloon cars
 		| Audi     | S4    | 2015 | Saloon | 17500 | 8.3         |
 		| Mercedes | C200  | 2018 | Saloon | 25000 | 8.0         |
 
-Scenario: List of Hatchback cars
+Scenario: fetch list of Hatchback cars
 	When I get a list of cars by Hatchback type
 	Then I verify the received cars list is the same as following
 		| Make       | Model  | Year | Type      | Price | ZeroToSixty |
 		| Ford       | Fiesta | 2012 | Hatchback | 3000  | 23.0        |
 		| Volkswagen | Golf   | 2015 | Hatchback | 12000 | 12.0        |
 
-Scenario: List of SUV cars
+Scenario: Fetch list of Suv cars
 	When I get a list of cars by Suv type
 	Then I verify the received cars list is the same as following
 		| Make   | Model        | Year | Type | Price | ZeroToSixty |
 		| Toyota | Land Cruiser | 2018 | Suv  | 45000 | 12.0        |
 
-Scenario: List of Racing cars
+Scenario: Try to fetch list of Racing cars
 	Then attempt to get a list of cars by Racing type results in an error
 
 	
