@@ -15,7 +15,7 @@ Scenario: Fetch list of saloon cars
 		| Audi     | S4    | 2015 | Saloon | 17500 | 8.3         |
 		| Mercedes | C200  | 2018 | Saloon | 25000 | 8.0         |
 
-Scenario: fetch list of Hatchback cars
+Scenario: Fetch list of Hatchback cars
 	When I get a list of cars by Hatchback type
 	Then I verify the received cars list is the same as following
 		| Make       | Model  | Year | Type      | Price | ZeroToSixty |
