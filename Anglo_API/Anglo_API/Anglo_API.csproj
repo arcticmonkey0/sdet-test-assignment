@@ -10,8 +10,7 @@
     <RootNamespace>Anglo_API</RootNamespace>
     <AssemblyName>Anglo_API</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,13 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apis\AngloApi.cs" />
+    <Compile Include="Apis\Api.cs" />
+    <Compile Include="Core\ContentConverter.cs" />
+    <Compile Include="Core\ContentFormat.cs" />
+    <Compile Include="Core\Endpoint.cs" />
+    <Compile Include="Core\EndpointUrl.cs" />
+    <Compile Include="Core\Hooks\BaseTest.cs" />
     <Compile Include="Endpoints\Cars.cs" />
     <Compile Include="Messages\Car.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\CarTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
+    <Folder Include="Core\Api\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">
@@ -63,6 +69,9 @@
     <PackageReference Include="RestSharp">
       <Version>108.0.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

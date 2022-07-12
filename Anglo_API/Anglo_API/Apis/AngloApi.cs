@@ -1,14 +1,13 @@
 ﻿using Anglo_API.Endpoints;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Anglo_API.Apis
 {
-    internal class AngloApi
+    internal class AngloApi : Api
     {
-        internal Cars Cars { get; private set; }
+        internal AngloApi(string baseUrl) : base(baseUrl)
+        {
+        }
+
+        public Cars Cars { get; private set; }
     }
 }
