@@ -2,11 +2,17 @@
 {
     public class Car
     {
-        protected bool Equals(Car other)
-        {
-            return make == other.make && model == other.model && year == other.year && type == other.type &&
-                   zeroToSixty.Equals(other.zeroToSixty) && price == other.price;
-        }
+        public string make { get; set; }
+
+        public string model { get; set; }
+
+        public string year { get; set; }
+
+        public string type { get; set; }
+
+        public double zeroToSixty { get; set; }
+
+        public int price { get; set; }
 
         public override bool Equals(object obj)
         {
@@ -30,11 +36,10 @@
             }
         }
 
-        public string make { get; set; }
-        public string model { get; set; }
-        public string year { get; set; }
-        public string type { get; set; }
-        public double zeroToSixty { get; set; }
-        public int price { get; set; }
+        private bool Equals(Car other)
+        {
+            return make == other.make && model == other.model && year == other.year && type == other.type &&
+                   zeroToSixty.Equals(other.zeroToSixty) && price == other.price;
+        }
     }
 }

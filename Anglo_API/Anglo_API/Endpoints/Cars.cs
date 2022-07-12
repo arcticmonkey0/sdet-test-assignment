@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Anglo_API.Core;
+﻿using Anglo_API.Core;
 using Anglo_API.Messages;
-using RestSharp;
+using System.Collections.Generic;
+using System.Net;
 
 namespace Anglo_API.Endpoints
 {
@@ -21,6 +15,12 @@ namespace Anglo_API.Endpoints
         {
             EndpointUrl.SetUrlVariables(type);
             return Get<List<Car>>();
+        }
+
+        public void GetCarByType(string type, HttpStatusCode statusCode)
+        {
+            EndpointUrl.SetUrlVariables(type);
+            Get<object>(expectedStatusCode: statusCode);
         }
     }
 }

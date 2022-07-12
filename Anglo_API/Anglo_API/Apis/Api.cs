@@ -1,16 +1,14 @@
-﻿using System;
+﻿using Anglo_API.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Anglo_API.Core;
 
 namespace Anglo_API.Apis
 {
     internal class Api
     {
-        protected string BaseUrl;
+        private string BaseUrl;
 
         internal Api(string baseUrl)
         {

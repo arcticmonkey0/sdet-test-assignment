@@ -1,5 +1,4 @@
 ﻿using Anglo_API.Apis;
-using NUnit.Framework;
 using System.Configuration;
 using TechTalk.SpecFlow;
 

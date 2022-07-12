@@ -6,12 +6,12 @@ namespace Anglo_API.Core
 {
     public class Endpoint
     {
-        public Endpoint(EndpointUrl endpointUrl)
+        protected Endpoint(EndpointUrl endpointUrl)
         {
             EndpointUrl = endpointUrl;
         }
 
-        public EndpointUrl EndpointUrl { get; }
+        protected EndpointUrl EndpointUrl { get; }
         
         protected T Get<T>(ContentFormat responseFormat = ContentFormat.Json, HttpStatusCode expectedStatusCode = HttpStatusCode.OK)
         {
