@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anglo_API", "Anglo_API\Anglo_API.csproj", "{5CD82706-2609-43A8-8A44-1629DAAA04CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD82706-2609-43A8-8A44-1629DAAA04CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD82706-2609-43A8-8A44-1629DAAA04CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD82706-2609-43A8-8A44-1629DAAA04CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD82706-2609-43A8-8A44-1629DAAA04CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C346191F-9565-44D7-8A5C-101CF4E721BA}
+	EndGlobalSection
+EndGlobal
