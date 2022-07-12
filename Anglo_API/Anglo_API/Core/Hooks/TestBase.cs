@@ -1,4 +1,5 @@
-﻿using Anglo_API.Apis;
+﻿using System;
+using Anglo_API.Apis;
 using System.Configuration;
 using TechTalk.SpecFlow;
 
@@ -15,6 +16,9 @@ namespace Anglo_API.Core.Hooks
         }
 
         protected ScenarioContext Context { get; }
+
+        [BeforeScenario]
+        public void LogScenarioName() => Console.WriteLine($"Scenario {Context.ScenarioInfo.Title} has started.");
 
     }
 }
