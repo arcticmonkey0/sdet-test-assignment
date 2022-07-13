@@ -31,6 +31,7 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="Tests\StoreTests.feature" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
@@ -42,7 +43,21 @@
     <Folder Include="UI\PageObject\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Tests\example.spec.ts" />
+    <TypeScriptCompile Include="Hooks\Hooks.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="StepDefinitions\StoreSteps.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="UI\PageObject\CartPage.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="UI\PageObject\HomePage.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="UI\PageObject\SearchResultsPage.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
