@@ -10,7 +10,7 @@ const baseUrl = "https://automationteststore.com";
 
 BeforeAll(async function () {
     global.browser = await chromium.launch({
-      headless: true,
+      headless: false,
       slowMo: 100
     });
   });
@@ -22,7 +22,7 @@ BeforeAll(async function () {
   Before(async function (this: OurWorld) {
     this.context = await global.browser.newContext();
     this.page = await this.context.newPage();
-    this.page.goto(baseUrl);
+    await this.page.goto(baseUrl);
   });
 
   // Cleanup after each scenario
