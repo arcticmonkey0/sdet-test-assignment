@@ -13,5 +13,5 @@ Solution consists of 2 projects:
 ==Run==
 
 1. Clone the repository
-2. To run Anglo_API, just open the solution in Visual Studio then build it. Tests will appear in Test Explorer window which you can then just run.
+2. To run Anglo_API, first start the ShowroomService. Then open the Anglo_Sdet_Test_Assignment solution in Visual Studio, build it. Tests will appear in Test Explorer window which you can then just run.
 3. To run Anglo_UI, open terminal in Anglo_UI folder and execute following commands: npm install, npx playwright install, npm run build, npm test.
