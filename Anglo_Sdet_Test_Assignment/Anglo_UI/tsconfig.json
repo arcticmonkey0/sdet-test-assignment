@@ -3,7 +3,8 @@
     "module": "commonjs",
     "target": "es6",
     "lib": [ "es6", "ES2016", "dom" ],
-    "sourceMap": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules"

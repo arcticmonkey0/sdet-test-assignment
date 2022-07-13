@@ -4,3 +4,6 @@ node_modules/
 /playwright/.cache/
 /**/*.map
 /**/*.js
+/test-results/
+/playwright-report/
+/playwright/.cache/
